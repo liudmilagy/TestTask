@@ -1,7 +1,6 @@
 import models.Value;
-import org.intellij.lang.annotations.Language;
-import services.ValueService;
 
+import services.ValueService;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -27,6 +26,7 @@ public class Main {
         // Создать/очистить таблицу
 
         ValueService valueService = new ValueService();
+        valueService.createTable();
         for (int i = 0; i <list.size(); i++) {
             System.out.println(list.get(i));
 

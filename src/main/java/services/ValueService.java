@@ -12,4 +12,8 @@ public class ValueService {
     public void saveValue(Value value) {
         valueDao.save(value);
     }
+
+    public static void createTable() {
+        ValueDao.createTable();
+    }
 }
