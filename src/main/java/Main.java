@@ -21,10 +21,6 @@ public class Main {
 
         sort(list);
 
-//        @Language("SQL")
-//        String s = "CREATE TABLE VALUE (v Float)";
-        // Создать/очистить таблицу
-
         ValueService valueService = new ValueService();
         valueService.createTable();
         for (int i = 0; i <list.size(); i++) {
